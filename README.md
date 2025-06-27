@@ -7,3 +7,5 @@ This is under progress, come later to see more updates..
 Build Notes:
 
 - Each thread will have its own LSU, ALU, RF, PC_NZP
+- maybe there is no need for a scheduler, will see later on
+- making the mem controller a little flexible using the parameters like # consumers, channels, for future scalabitly or expts.
