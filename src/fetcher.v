@@ -1,6 +1,6 @@
 module Fetcher #(
     parameter NUM_THREADS = 4,  // number of threads per core
-    parameter ADDR_BITS = 8,    // PC and memory address width
+    parameter ADDR_BITS = 8,    // PC and memory address width @assign (self{Yaswanth2747}): -m "reduce this"
     parameter INSTR_BITS = 16   // instruction width
 ) (
     input clk, reset,                            // Clocks and resets synchronously
@@ -10,7 +10,7 @@ module Fetcher #(
     output reg [NUM_THREADS-1:0][ADDR_BITS-1:0] pc // Outputs PC values to PC_NZP modules
 );
     // Defining program memory as 256-entry for now, 16-bit wide ROM
-    reg [INSTR_BITS-1:0] program_memory [0:2**ADDR_BITS-1]; // maybe should reducce this later on, it is too much
+    reg [INSTR_BITS-1:0] program_memory [0:2**ADDR_BITS-1]; // maybe should reduce this later on, it is too much
     
     // Initializes program memory with example instructions
     initial begin
