@@ -3,3 +3,7 @@ A minimal GPU architecture implemented in Verilog, focusing on vector operations
 
 
 This is under progress, come later to see more updates..
+
+Build Notes:
+
+- Each thread will have its own LSU, ALU, RF, PC_NZP
