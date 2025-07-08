@@ -11,4 +11,5 @@ You can find the developed components in `src` dir.
 - keep track of params for global instances, local params defined accordingly only for state description, not to be confused
 - making the mem controller a little flexible using the parameters like # consumers, channels, for future scalability or expts.
 - each thread is like a multicycle version of a risc cpu, can make it pipelined with addition of some additional temp_rgsts and modifications in scheduler, but only multicycle for no
-- core and toplevel havent been developed yet. To be completed before July-15 mostly
+- added core and toplevel havent been developed yet.
+- testbenches added, ongoin tests.
