@@ -1,10 +1,11 @@
 # miniGPU
-A minimal GPU architecture implemented in Verilog, focusing on vector operations and parallel execution. Building as part of Seasons of Code 2025 (SoC) at IIT Bombay.
-
+A minimal GPU architecture implemented in Verilog, focusing on vector operations and parallel execution. Built as part of Seasons of Code 2025 (SoC) at IIT Bombay.
+![miniGPU Architecture](https://github.com/Yaswanth2747/miniGPU/raw/main/miniGPU.drawio.svg)
 You can find the developed components in `src` dir.
->This is under progress, come later to see more updates..
 
-**On-going Build Notes:**
+---
+
+**Build Notes:**
 - Each thread will have its own LSU, ALU, RF, PC_NZP
 - keep track of params for global instances, local params defined accordingly only for state description, not to be confused
 - making the mem controller a little flexible using the parameters like # consumers, channels, for future scalability or expts.
