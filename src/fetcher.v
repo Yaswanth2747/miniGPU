@@ -2,7 +2,7 @@
 // Instruction Fetch Unit for a single miniGPU core.
 // Retrieves instructions from a hardcoded program memory (ROM) based on the PC.
 
-module fetcher #( // Module name is lowercase: fetcher
+module fetcher #(
     parameter NUM_THREADS = 4,
     parameter ADDR_BITS = 8,
     parameter INSTR_BITS = 16
